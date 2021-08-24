@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<head>
+    <title>M2N_76 Page</title>
+    <meta charset="UTF-8" />
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <!--loading-->
+    <div class="loading" id="loading"><img src="./gif/loading.gif"></div>
+    <img class="background" src="./img/background.png">
+    <div id="top"></div>
+    <!--منوی بالای سایت-->
+    <div class="top-menu" id="top-menu">
+        <div class="top-menu-item-div">
+            <span class="top-menu-item" title="تجارب من"><a href="#tajarob-modal">تجارب من</a></span>
+            <span class="top-menu-item" title="مدارج تحصیلی من"><a href="#tahsilat-modal">تحصیلات من</a></span>
+            <span class="top-menu-item" title="رزومه ی من"><a href="#rezome-modal">رزومه </a></span>
+            <span class="top-menu-item" title="راه های ارتباطی با من"><a href="#ertebat-modal">ارتباط با من</a></span>
+        </div>
+        <div class="top-menu-last-Item-div">
+            <span class="top-menu-item" title=" درباره ی من"><a href="#about-modal">درباره من</a></span>
+        </div>
+    </div>
+
+    <!--پنجره مدال باز شده به واسطه منو-->
+    <div class="modal" id="tajarob-modal">
+        <div>
+            <span class="close-modal"><a href="#"><img src="./icons/close.png" alt="close"></a></span><br>
+            <h2>تجارب من</h2>
+            <p>تجربه من در زمینه برنامه نویسی و فقط در حد دروس دانشگاهی بوده و نه بیشتر </p>
+
+        </div>
+    </div>
+    <div class="modal" id="tahsilat-modal">
+        <div>
+            <span class="close-modal"><a href="#"><img src="./icons/close.png" alt="close"></a></span><br>
+            <h2>تحصیلات من</h2>
+            <p>دانشجوی رشته نرم افزار هستم </p>
+
+        </div>
+    </div>
+    <div class="modal" id="rezome-modal">
+        <div>
+            <span class="close-modal"><a href="#"><img src="./icons/close.png" alt="close"></a></span><br>
+            <h2> رزومه</h2>
+            <p>رزومه ای در دسترس نیست یک تازه کار در زمینه نرم افزار هستم </p>
+
+        </div>
+    </div>
+    <div class="modal" id="ertebat-modal">
+        <div>
+            <span class="close-modal"><a href="#"><img src="./icons/close.png" alt="close"></a></span><br>
+            <h2>ارتباط با من</h2>
+            <p>ارتباط با من از طریق تمام شبکه های مجازی با نام <strong>M2N_76</strong>امکان پذیر میباشد.</p>
+
+        </div>
+    </div>
+    <div class="modal" id="about-modal">
+        <div>
+            <span class="close-modal"><a href="#"><img src="./icons/close.png" alt="close"></a></span><br>
+            <h1>درباره من</h1>
+            <p> این یک نمونه سایت طراحی شده توسط من به سفارش وبسایت مکتب خونه جهت تمرین میباشد. که به عنوان یه پروژه آموزشی باید ارسال شود.</p>
+
+        </div>
+    </div>
+
+    <!--اسلایدر بالای سایت-->
+    <div class="slider" id="slider">
+        <div class="slide active">
+            <img src="./img/slied (1).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (2).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (3).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (4).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (5).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (6).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (7).jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/slied (8).jpg" alt="">
+        </div>
+        <a href="#" class="next">&#10095</a>
+        <a href="#" class="prev">&#10094</a>
+
+    </div>
+    <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"> </span>
+        <span class="dot" onclick="currentSlide(1)"> </span>
+        <span class="dot" onclick="currentSlide(2)"> </span>
+        <span class="dot" onclick="currentSlide(3)"> </span>
+        <span class="dot" onclick="currentSlide(4)"> </span>
+        <span class="dot" onclick="currentSlide(5)"> </span>
+        <span class="dot" onclick="currentSlide(6)"> </span>
+        <span class="dot" onclick="currentSlide(7)"> </span>
+    </div>
+
+    <!--دکمه فرستادن به پایین صفحه-->
+
+    <div class="send-down-btn" id="send-down-btn">
+        <img id="send-down-btn-img" src="./icons/down-arrow.png" alt="down-arrow">
+    </div>
+    <!--باکس وسط-->
+    <div id="main-box" id="main-box" style="display: none;">
+        <div class="center-box" id="center-box">
+            <!--ستون سمت راست-->
+            <div class="right-bar">
+                <ul class="right-bar-list">
+                    <li class="right-bar-list-items"><a href="#tajarob-modal">تجارب من</a>
+                    </li>
+                    <li class="right-bar-list-items"><a href="#tahsilat-modal">تحصیلات من</a>
+                    </li>
+                    <li class="right-bar-list-items"><a href="#rezome-modal">رزومه</a>
+                    </li>
+                    <li class="right-bar-list-items"><a href="#ertebat-modal">ارتباط با من</a>
+                    </li>
+                </ul>
+            </div>
+            <!--ستون وسط-->
+            <div class="center-bar">
+                <div class="center-bar-items" title="درباره سایت">
+                    <a href="#">
+                        <h2>این سایت</h2>
+                        <p>این سایت به واسطه زبان های htmlوcss نوشته شده است که به واسطه آموزش های وبسایت مکتب خونه به دست آمده است
+                        </p>
+                    </a>
+                </div>
+                <div class="center-bar-items" title="دلیل انتخاب طراحی سایت">
+                    <a href="#">
+                        <h2>چرا طراحی سایت؟</h2>
+                        <p>به دو دلیل :دلیل اول اینکه دانشجوی رشته نرم افزار هستم و یکی از شاخه های محبوب در این رشته طراحی وب میباشد. <br>و دلیل دوم اینکه طراحی وب یک علم پر استفاده در دنیای امروز و خیلی گسترده و رویایی است.
+                        </p>
+                    </a>
+                </div>
+                <div class="center-bar-items" title="تجارب کاری من">
+                    <a href="#">
+                        <h2>تجارب من</h2>
+                        <p>تجربه من در زمینه برنامه نویسی و فقط در حد دروس دانشگاهی بوده و نه بیشتر </p>
+                    </a>
+                </div>
+                <div class="center-bar-items" title="تحصیلات من">
+                    <a href="#">
+                        <h2>تحصیلات من</h2>
+                        <p>دانشجوی رشته نرم افزار هستم </p>
+                    </a>
+                </div>
+                <div class="center-bar-items" title="رزومه ی من">
+                    <a href="#">
+                        <h2> رزومه</h2>
+                        <p>رزومه ای در دسترس نیست یک تازه کار در زمینه نرم افزار هستم </p>
+                    </a>
+                </div>
+                <div class="center-bar-items" title="روش های ارتباطی با من
+                ">
+                    <a href="#">
+                        <h2>ارتباط با من</h2>
+                        <p>ارتباط با من از طریق تمام شبکه های مجازی با نام <strong>M2N_76</strong>امکان پذیر میباشد.</p>
+                    </a>
+                </div>
+            </div>
+            <!--ستون سمت چپ-->
+            <div class="left-bar">
+                <a href="#">
+                    <h1>درباره من</h1>
+                    <p> این یک نمونه سایت طراحی شده توسط من به سفارش وبسایت مکتب خونه جهت تمرین میباشد. که به عنوان یه پروژه آموزشی باید ارسال شود.</p>
+                </a>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer-box" id="footerBox">
+            <div class="social-media">
+                <a href="https://t.me/m2n_76">
+                    <div class="social-media-item" title="telegram">
+                        <img src="./icons/telegram.png" alt="telegram">
+                        <h3>M2N_76</h3>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/m2n_76/" title="instagram">
+                    <div class="social-media-item">
+                        <img src="./icons/instagram.png" alt="instagram">
+                        <h3>M2N_76</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-media-item" title="linkedin">
+                        <img src="./icons/linkedin.png" alt="linkedin">
+                        <h3>M2N_76</h3>
+                    </div>
+                </a>
+                <a href="https://twitter.com/M2N_76">
+                    <div class="social-media-item" title="twitter">
+                        <img src="./icons/twitter.png" alt="twitter">
+                        <h3>M2N_76</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-media-item" title="whats app">
+                        <img src="./icons/whatsapp.png" alt="whatsapp">
+                        <h3>M2N_76</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="copy-right">
+                <p>2020- <a href="#">M2N_76</a> - All Rights Reserve.</p>
+                <img src="./icons/copyright.png">
+            </div>
+        </div>
+    </div>
+    <!--دکمه ارسال به بالای سایت-->
+    <a href="#top" class="send-to-top-btn" id="smothScroolToTop">
+        <img src="./icons/up-arrow.png" alt="down-arrow">
+    </a>
+    <script type="text/javascript" src="code.js"></script>
+
+</body>
